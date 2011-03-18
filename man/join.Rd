@@ -3,7 +3,7 @@
 \title{Finds the Value of Mapped Variables at some Specified Locations
   (Spatial Join)}
 \description{
-  \code{join.asc} finds the value of a mapped variable at some specified
+  \code{join} finds the value of a mapped variable at some specified
   locations.
 }
 \usage{
