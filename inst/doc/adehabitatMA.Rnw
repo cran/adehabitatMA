@@ -55,7 +55,7 @@ The package {\tt adehabitatMA} contains functions allowing the analysis of
 mapped data that were originally available in the package {\tt
   adehabitat} (Calenge, 2006).\\
 
-I developped the package {\tt adehabitat} during my PhD (Calenge, 2005)
+I developed the package {\tt adehabitat} during my PhD (Calenge, 2005)
 to make easier the analysis of habitat selection by animals.  The
 package {\tt adehabitat} was designed to extend the capabilities of
 the package {\tt ade4} concerning studies of habitat selection by

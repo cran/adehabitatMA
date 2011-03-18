@@ -1169,7 +1169,7 @@ void getcontour(double *grille, int *nlig, int *ncol, int *indicelig,
 void lcontour(double *grille, int *nlig, int *ncol, int *lcont)
 {
     /* Declaration of local variables*/
-    int i, j, k, l, m,n, nl, nc, *P0, *P1, fini, *np, dirprec, dir;
+    int i, j, k, nl, nc, *P0, *P1, fini, *np, dirprec, dir;
     int lidlig;
     double **x, **vois;
     
@@ -1214,11 +1214,7 @@ void lcontour(double *grille, int *nlig, int *ncol, int *lcont)
     P0[1] = i;
     P0[2] = j;
     dir = 4;
-    
-    m=1;
-    n=1;
-    l=1;
-    
+        
     fini = 0;
     k = 0;
     
@@ -1856,13 +1852,11 @@ void regroufacasc(double **asce, double **ascs, int *np,
 		  int *nlev)
 {
     /* declaration of variables */
-    int i, j, k, l, m, dr, fr, dc, fc, nre, nrs;
-    int nce, ncs, nl, *ll, max, vm, na, *vecmax;
+    int i, j, k, l, m, dr, fr, dc, fc, nrs;
+    int ncs, nl, *ll, max, vm, na, *vecmax;
     
     /* Memory allocation */
-    nre = asce[0][0];
     nrs = ascs[0][0];
-    nce = asce[1][0];
     ncs = ascs[1][0];
     nl = *nlev;
     vecintalloc(&ll, nl);
@@ -1986,12 +1980,11 @@ void regroufacascr(double *ascer, double *ascsr, int *npr,
 void regrouascnum(double **ascent, double **ascso)
 {
     /* Declaration */
-    int i, j, k, l, n, nle, nls, nce, ncs, nreg;
+    int i, j, k, l, n, nle, nls, ncs, nreg;
     double moy, tmp;
     
     /* Definition of the variables */
     nle = ascent[0][0];
-    nce = ascent[1][0];
     nls = ascso[0][0];
     ncs = ascso[1][0];
     nreg = nle/nls;
