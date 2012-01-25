@@ -2,9 +2,10 @@ explore <- function (ka, coltxt="black",
                      hscale = 1, vscale = 1,
                      panel.last=NULL, ...)
 {
+    if (is(ka, "SpatialGrid"))
+        fullgrid(ka) = FALSE
     if (!inherits(ka,"SpatialPixelsDataFrame"))
       stop("ka should be of class SpatialPixelsDataFrame")
-    gridded(ka) <- TRUE
     gr <- gridparameters(ka)
     if (nrow(gr) > 2)
         stop("ka should be defined in two dimensions")

@@ -1,10 +1,11 @@
 "distfacmap" <- function(x, lev = NULL)
 {
     ## Verifications
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixelsDataFrame"))
         stop("x should be of class \"SpatialPixelsDataFrame\"")
 
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     pfs <- proj4string(x)
     if (nrow(gr) > 2)

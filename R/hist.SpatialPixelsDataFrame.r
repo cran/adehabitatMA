@@ -3,9 +3,10 @@ hist.SpatialPixelsDataFrame <- function (x, type = c("h", "l", "b"),
                                          lwd = 1, ...)
 {
     type <- match.arg(type)
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixelsDataFrame"))
         stop("should be an object of class \"SpatialPixelsDataFramex\"")
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     if (nrow(gr) > 2)
         stop("x should be defined in two dimensions")

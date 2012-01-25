@@ -1,10 +1,11 @@
 "getcontour" <- function(sp)
   {
       ## Verifications
+      if (is(sp, "SpatialGrid"))
+          fullgrid(sp) = FALSE
       if (!inherits(sp, "SpatialPixelsDataFrame"))
           stop("should be an object of class SpatialPixelsDataFrame")
       pfs <- proj4string(sp)
-      gridded(sp) <- TRUE
       gr <- gridparameters(sp)
       if (nrow(gr) > 2)
           stop("sp should be defined in two dimensions")

@@ -1,6 +1,8 @@
 "buffer" <- function(xy, x, dist)
 {
     ## Verifications
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixels"))
         stop("x should inherit the class SpatialPixels")
 
@@ -9,7 +11,6 @@
     if (!identical(pfsx, pfsxy))
         stop("different proj4string in x and xy")
 
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     if (nrow(gr) > 2)
         stop("x should be defined in two dimensions")

@@ -1,9 +1,10 @@
 join <- function(xy, x)
 {
     ## Verifications
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixelsDataFrame")) stop("non convenient data")
     if (!inherits(xy, "SpatialPoints")) stop("non convenient data")
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     if (nrow(gr) > 2)
         stop("x should be defined in two dimensions")

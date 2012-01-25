@@ -1,10 +1,11 @@
 lowres <- function(x, np=2, which.fac=NULL, ...)
 {
     ## Verifications
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixelsDataFrame"))
           stop("x should be of class \"SpatialPixelsDataFrame\"")
     pfs <- proj4string(x)
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     if (nrow(gr) > 2)
         stop("x should be defined in two dimensions")

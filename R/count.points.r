@@ -1,6 +1,8 @@
 "count.points" <- function(xy, w)
   {
       ## Verifications
+      if (is(w, "SpatialGrid"))
+          fullgrid(w) = FALSE
       if (!inherits(w, "SpatialPixels"))
           stop("w should inherit the class SpatialPixels")
       if (!inherits(xy, "SpatialPoints"))
@@ -10,7 +12,6 @@
       if (!identical(pfsx, pfsxy))
           stop("different proj4string in w and xy")
 
-      gridded(w) <- TRUE
       gr <- gridparameters(w)
       if (nrow(gr) > 2)
           stop("w should be defined in two dimensions")

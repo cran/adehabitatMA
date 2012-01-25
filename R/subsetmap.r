@@ -1,9 +1,10 @@
 "subsetmap" <- function(x, xlim=NULL, ylim=NULL, ...)
 {
     ## Verifications
+    if (is(x, "SpatialGrid"))
+        fullgrid(x) = FALSE
     if (!inherits(x, "SpatialPixelsDataFrame"))
         stop("x should be of class SpatialPixelsDataFrame")
-    gridded(x) <- TRUE
     gr <- gridparameters(x)
     if (nrow(gr) > 2)
         stop("x should be defined in two dimensions")

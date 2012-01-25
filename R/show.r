@@ -5,7 +5,6 @@ print.SpatialPixelsDataFrame <- function(x, ...)
     if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
         cat("Object of class \"SpatialPixelsDataFrame\" (package sp):\n\n")
         cat("Grid parameters:\n")
-        gridded(x) <- TRUE
         print(gridparameters(x))
         cat("\nVariables measured:\n")
         print(head(slot(x, "data"), 6))
@@ -42,7 +41,6 @@ print.SpatialPixels <- function(x, ...)
     if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
         cat("Object of class \"SpatialPixels\" (package sp):\n\n")
         cat("Grid parameters:\n")
-        gridded(x) <- TRUE
         print(gridparameters(x))
         cat("\n")
     } else {

@@ -1,10 +1,11 @@
 "labcon" <- function(x)
   {
       ## Verifications
+      if (is(x, "SpatialGrid"))
+          fullgrid(x) = FALSE
       if (!inherits(x, "SpatialPixelsDataFrame"))
           stop("should be an object of class SpatialPixelsDataFrame")
       pfs <- proj4string(x)
-      gridded(x) <- TRUE
       gr <- gridparameters(x)
       if (nrow(gr) > 2)
           stop("x should be defined in two dimensions")
