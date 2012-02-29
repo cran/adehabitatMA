@@ -95,13 +95,21 @@ tail.SpatialPoints <- function(x, n=6, ...)
 head.SpatialPointsDataFrame <- function(x, n=6, ...)
 {
     cc = substring(paste(as.data.frame(t(signif(coordinates(x))))),2,999)
-    print(head(data.frame("coordinates" = cc, x@data), n=6, ...))
+    print(head(data.frame("coordinates" = cc, x@data), n=n, ...))
+    pst <- paste(strwrap(paste(
+                               "Coordinate Reference System (CRS) arguments:",
+                               proj4string(x))), collapse="\n")
+    cat(pst, "\n")
 }
 
 tail.SpatialPointsDataFrame <- function(x, n=6, ...)
 {
     cc = substring(paste(as.data.frame(t(signif(coordinates(x))))),2,999)
-    print(tail(data.frame("coordinates" = cc, x@data), n=6, ...))
+    print(tail(data.frame("coordinates" = cc, x@data), n=n, ...))
+    pst <- paste(strwrap(paste(
+                               "Coordinate Reference System (CRS) arguments:",
+                               proj4string(x))), collapse="\n")
+    cat(pst, "\n")
 }
 
 

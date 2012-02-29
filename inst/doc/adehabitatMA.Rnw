@@ -120,7 +120,7 @@ with this package.  However, the package \texttt{adehabitat}
 originally contained functions which were also useful in spatial
 analysis though not available in \texttt{sp}, and especially in the
 field of analysis of animal space use. For this reason, I included
-these functions in the package \texttt{adehabitatMA}. I demonstate the use
+these functions in the package \texttt{adehabitatMA}. I demonstrate the use
 of these functions in this document.\\
 
 I will demonstrate the use of this package using the example dataset

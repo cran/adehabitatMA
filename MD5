@@ -1,4 +1,4 @@
-9e4b883201ca2ff3a8719cf63b460b11 *DESCRIPTION
+481e4569c5856355ef57effe1f1f86ad *DESCRIPTION
 03562a85283e74c5a50bd45c107f0186 *NAMESPACE
 f210ad41c6c04d15c8f6df4d5a23155e *R/ademaps-internal.R
 a3cbb60351ea8da55577ac902387c759 *R/area2spol.r
@@ -21,14 +21,14 @@ cb7405d61d765cda2e4518e145668c25 *R/labcon.r
 d15623905c61905ebbb39503568307d6 *R/mimage.R
 c9c6e505b6dd0247cc37076b32c45e6f *R/morphology.r
 9ba1e6d5db50326fe3bc9d2ffa9758aa *R/perarea.r
-d3afa439f1f81165ad8d012815f523db *R/show.r
+4863a37c04f3fb2ab092a72b93bf83fb *R/show.r
 9c99e3c1acd3addca038493eaa5f0161 *R/spol2area.r
 2f46e151f7f05bff6fcc2dfdbef67d83 *R/subsetmap.r
 03efafc54d3b4db4d2d0e2ab080d4b38 *data/lynxjura.rda
 79eceaa18d3355dcac7f5a9c32500404 *data/puechabonsp.rda
 91e834fa34052bea7075cc44818d8aeb *inst/CITATION
-345a0116900265efee7f16678ff99885 *inst/doc/adehabitatMA.Rnw
-250df642bde73ab2797c493c2810c5e2 *inst/doc/adehabitatMA.pdf
+1f4f5a77f9dff98c39cde47c7f3390b7 *inst/doc/adehabitatMA.Rnw
+1b4de6b9c2c636eb64efd8957408fb39 *inst/doc/adehabitatMA.pdf
 38a2cb8faeb994e00f883659014fa6cc *inst/doc/screenshot1.png
 20fd7d6f92eb8ada58db4335d077ac33 *man/adehabitatMA-internals.Rd
 18ad83a6c9982b13eecbd89346e7d633 *man/adeoptions.Rd
