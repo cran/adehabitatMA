@@ -12,10 +12,12 @@ chasse et de la faune sauvage).
 data(puechabonsp)
 }
 \details{
-  The list \code{puechabonsp} has two components:\cr
+  The list \code{puechabonsp} has two components:
+  
   \code{puechabonsp$map}
   is an  object of class \code{SpatialPixelsDataFrame} that describes several
-  variables on the study area.\cr
+  variables on the study area.
+
   \code{puechabonsp$relocs} is an object of class \code{SpatialPointsDataFrame}
   containing the relocations of the wild boar resting sites in
   summer. Information on wild boars is provided by factors \code{Name},

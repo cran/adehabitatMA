@@ -16,11 +16,13 @@ adeoptions(\dots)
 \details{
   This functions sets the value of components of the internal list
   \code{.adeoptions}, which contains the values of the options.   Two
-  options are currently implemented:\cr
-  \code{epsilon}{the smallest significant distance between two points
+  options are currently implemented:
+  
+  \code{epsilon}{  the smallest significant distance between two points
     above which we should consider to deal with two separate
-    locations} \cr
-  \code{shortprint}{logical.  Defines whether special \code{show}
+    locations}
+  
+  \code{shortprint}{  logical.  Defines whether special \code{show}
     methods should be used when printing objects belonging to classes of
   the package \code{sp}}
 }

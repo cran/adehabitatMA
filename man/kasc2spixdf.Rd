@@ -6,24 +6,25 @@
 \alias{attpol2area}
 \title{ Conversion of old classes (adehabitat) to new classes (sp,adehabitatMA)}
 \description{
+
   These functions convert maps of classes available in adehabitat toward
-  classes available in the package \code{sp} and conversely.\cr
-  \cr
+  classes available in the package \code{sp} and conversely.
+  
   \code{kasc2spixdf} converts an object of class \code{kasc} into an
-  object of class \code{SpatialPixelsDataFrame}.\cr
-  \cr
+  object of class \code{SpatialPixelsDataFrame}.
+  
   \code{asc2spixdf} converts an object of class \code{asc} into an
-  object of class \code{SpatialGridDataFrame}.\cr
-  \cr
+  object of class \code{SpatialGridDataFrame}.
+  
   \code{area2spol} converts an object of class \code{area} into an
-  object of class \code{SpatialPolygons}.\cr
-  \cr
+  object of class \code{SpatialPolygons}.
+  
   \code{spol2area} converts an object of class \code{SpatialPolygons} or
   \code{SpatialPolygonsDataFrame} into an object of class
-  \code{area}.\cr
-  \cr
+  \code{area}.
+  
   \code{attpol2area} gets the data attribute of an object of class
-  \code{SpatialPolygonsDataFrame} and stores it into a data frame.\cr
+  \code{SpatialPolygonsDataFrame} and stores it into a data frame.
 }
 \usage{
 kasc2spixdf(ka)

@@ -16,7 +16,8 @@
 }
 \value{
   If only one variable is mapped in \code{x}, a vector with length
-  equals to the number of points in \code{xy}.\cr
+  equals to the number of points in \code{xy}.
+
   If only several variables are mapped in \code{x}, a \code{data.frame}
   with a number of columns equal to the number of variables in the
   object of class \code{SpatialPixelsDataFrame}, and with each row

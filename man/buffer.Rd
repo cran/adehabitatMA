@@ -3,14 +3,19 @@
 \title{Compute Buffers Regions}
 \description{
   \code{buffer} computes buffers regions from spatial objects belonging 
-  to the following classes:\cr
+  to the following classes:
+  
   \code{SpatialPoints} (all pixels located within a specified distance
-  of a point take the value one)\cr
+  of a point take the value one)
+  
   \code{SpatialPointsDataFrame} with one column (this column is
   considered to be a factor, and the buffer is computed for each level
-  of this factor)\cr 
-  \code{SpatialLines} to compute buffers from lines.\cr
-  \code{SpatialPolygons} to compute buffers from polygons.\cr
+  of this factor)
+  
+  \code{SpatialLines} to compute buffers from lines.
+  
+  \code{SpatialPolygons} to compute buffers from polygons.
+  
 }
 \usage{
 buffer(xy, x, dist)

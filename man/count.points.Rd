@@ -4,7 +4,7 @@
 \description{
   \code{count.points} counts the number of points in
   each pixel of a raster map inheriting the class
-  \code{SpatialPixels}.\cr
+  \code{SpatialPixels}.
 }
 \usage{
 count.points(xy, w)
