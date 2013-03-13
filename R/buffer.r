@@ -145,7 +145,7 @@
     if (meth=="polygons") {
         gridded(x) <- TRUE
         xyg <- coordinates(x)
-        ov <- as.numeric(!is.na(overlay(xy, x)))
+        ov <- as.numeric(!is.na(over(x, xy)))
         xy <- as(xy, "SpatialLines")
         li <- coordinates(xy)
         res <- apply(do.call("cbind", lapply(li, function(y) {

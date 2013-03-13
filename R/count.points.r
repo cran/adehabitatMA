@@ -32,7 +32,7 @@
           }
       }
       if (meth=="one") {
-          ov <- overlay(w, xy)
+          ov <- over(xy, geometry(w))
           oo <- table(ov)
           repo <- rep(0, length(w[[1]]))
           repo[as.numeric(names(oo))] <- oo

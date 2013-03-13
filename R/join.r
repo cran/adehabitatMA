@@ -19,7 +19,7 @@ join <- function(xy, x)
 
 
     ## output
-    sorties <- as.data.frame(x)[overlay(x,xy),]
+    sorties <- as.data.frame(x)[over(xy, geometry(x)),]
 
     sorties<-sorties[,-c(ncol(as.data.frame(x))-1,ncol(as.data.frame(x)))]
     if (inherits(sorties, "data.frame"))

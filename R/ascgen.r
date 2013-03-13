@@ -48,7 +48,7 @@
 
       ## If count TRUE, the number of points is added for each pixel
       if (count) {
-          uu <- overlay(asc, SpatialPoints(xy))
+          uu <- over(SpatialPoints(xy), geometry(asc))
           uu <- table(uu)
           asc <- asc[[1]]
           asc[as.numeric(names(uu))] <- uu
