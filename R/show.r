@@ -2,35 +2,27 @@ print.SpatialPixelsDataFrame <- function(x, ...)
 {
     if (!inherits(x, "SpatialPixelsDataFrame"))
         stop("Non convenient data")
-    if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
-        cat("Object of class \"SpatialPixelsDataFrame\" (package sp):\n\n")
-        cat("Grid parameters:\n")
-        print(gridparameters(x))
-        cat("\nVariables measured:\n")
-        print(head(slot(x, "data"), 6))
-        if (length(x[[1]])>6)
-            cat("...\n")
-        cat("\n")
-    } else {
-        sp:::print.SpatialPixelsDataFrame(x)
-    }
+    cat("Object of class \"SpatialPixelsDataFrame\" (package sp):\n\n")
+    cat("Grid parameters:\n")
+    print(gridparameters(x))
+    cat("\nVariables measured:\n")
+    print(head(slot(x, "data"), 6))
+    if (length(x[[1]])>6)
+        cat("...\n")
+    cat("\n")
 }
 
 print.SpatialPolygonsDataFrame <- function(x, ...)
 {
     if (!inherits(x, "SpatialPolygonsDataFrame"))
         stop("Non convenient data")
-    if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
-        cat("Object of class \"SpatialPolygonsDataFrame\" (package sp):\n\n")
-        cat("Number of SpatialPolygons: ", length(x[[1]]))
-        cat("\n\nVariables measured:\n")
-        print(head(slot(x, "data"), 6))
-        if (length(x[[1]])>6)
-            cat("...\n")
-        cat("\n")
-    } else {
-        sp:::SpatialPolygonsDataFrame(x)
-    }
+    cat("Object of class \"SpatialPolygonsDataFrame\" (package sp):\n\n")
+    cat("Number of SpatialPolygons: ", length(x[[1]]))
+    cat("\n\nVariables measured:\n")
+    print(head(slot(x, "data"), 6))
+    if (length(x[[1]])>6)
+        cat("...\n")
+    cat("\n")
 }
 
 
@@ -38,14 +30,10 @@ print.SpatialPixels <- function(x, ...)
 {
     if (!inherits(x, "SpatialPixels"))
         stop("Non convenient data")
-    if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
-        cat("Object of class \"SpatialPixels\" (package sp):\n\n")
-        cat("Grid parameters:\n")
-        print(gridparameters(x))
-        cat("\n")
-    } else {
-        sp:::print.SpatialPixels(x)
-    }
+    cat("Object of class \"SpatialPixels\" (package sp):\n\n")
+    cat("Grid parameters:\n")
+    print(gridparameters(x))
+    cat("\n")
 }
 
 
@@ -54,18 +42,14 @@ print.SpatialGridDataFrame <- function(x, ...)
 {
     if (!inherits(x, "SpatialGridDataFrame"))
         stop("Non convenient data")
-    if (get(".adeoptions", envir=.adehabitatMAEnv)$shortprint) {
-        cat("Object of class \"SpatialGridDataFrame\" (package sp):\n\n")
-        cat("Grid parameters:\n")
-        print(gridparameters(x))
-        cat("\nVariables measured:\n")
-        print(head(slot(x, "data"), 6))
-        if (length(x[[1]])>6)
-            cat("...\n")
-        cat("\n")
-    } else {
-        sp:::print.SpatialGridDataFrame(x)
-    }
+    cat("Object of class \"SpatialGridDataFrame\" (package sp):\n\n")
+    cat("Grid parameters:\n")
+    print(gridparameters(x))
+    cat("\nVariables measured:\n")
+    print(head(slot(x, "data"), 6))
+    if (length(x[[1]])>6)
+        cat("...\n")
+    cat("\n")
 }
 
 head.SpatialPoints <- function(x, n=6, ...)
