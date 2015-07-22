@@ -1,5 +1,5 @@
-9ec17e054123b796e0daa0867653e165 *DESCRIPTION
-03562a85283e74c5a50bd45c107f0186 *NAMESPACE
+54ccddd1f5760bd94ca6fd2804fa9ee1 *DESCRIPTION
+afe29eaeb3951601b756d292054867f7 *NAMESPACE
 4a53bc6201bba4c2bb76b63d736e9394 *R/ademaps-internal.R
 a3cbb60351ea8da55577ac902387c759 *R/area2spol.r
 c6d173bc55639335217c0cf41fe36ed9 *R/as.area.r
@@ -51,6 +51,6 @@ f6a183770bbb61d7f7e4017bc1bb538d *man/mimage.Rd
 121ed29bd3f0f17ebfbb1ed157e11966 *man/puechabonsp.Rd
 8fd52f6ba8f14778b8e084d1b46314f2 *man/show-methods.Rd
 5a66b0e770a4fc261908f3f1ef0c76c8 *man/subsetmap.Rd
-b8726ffa9ffb2c7bd07081f143e383ac *src/tests.c
+53f1f9a912dd38852279672fc4743469 *src/tests.c
 bafde0b87d88e4a519308355a15876a2 *vignettes/adehabitatMA.Rnw
 38a2cb8faeb994e00f883659014fa6cc *vignettes/screenshot1.png
