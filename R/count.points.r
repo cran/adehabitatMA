@@ -43,11 +43,12 @@
               proj4string(repo) <- CRS(pfsx)
           return(repo)
       } else {
+          cat("Counting the number of points for each level of the factor", names(xy@data)[1], "...\n")
           id <- factor(xy[[1]])
           xy2 <- as.data.frame(coordinates(xy))
           lixy <- split(xy2, id)
           cp <- lapply(lixy, function(x) {
-              count.points(SpatialPoints(x), w)
+              count.points(SpatialPoints(x,proj4string = CRS(pfsxy)), w)
           })
           cp <- do.call("data.frame", lapply(cp, function(x) x[[1]]))
           coordinates(cp) <- coordinates(w)
@@ -57,4 +58,3 @@
           return(cp)
       }
   }
-
