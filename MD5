@@ -1,4 +1,4 @@
-d58a931390cdceff800288a09c532385 *DESCRIPTION
+8b0c9a5313b6b8d0494d929e59e6dd1e *DESCRIPTION
 a01a67b7853f0cfde883c7afe7ac42f4 *NAMESPACE
 4a53bc6201bba4c2bb76b63d736e9394 *R/ademaps-internal.R
 a3cbb60351ea8da55577ac902387c759 *R/area2spol.r
@@ -24,17 +24,17 @@ c9c6e505b6dd0247cc37076b32c45e6f *R/morphology.r
 603df5a87b4e05b6de1091faffe3140a *R/show.r
 6b4e76407863b77f79f2508c892aead6 *R/spol2area.r
 2f46e151f7f05bff6fcc2dfdbef67d83 *R/subsetmap.r
-f53808fd87d6a94eb5d22f9469b97d35 *build/vignette.rds
+e240436ad4555fd0aa7b6ee283c6f61d *build/vignette.rds
 03efafc54d3b4db4d2d0e2ab080d4b38 *data/lynxjura.rda
 79eceaa18d3355dcac7f5a9c32500404 *data/puechabonsp.rda
 91e834fa34052bea7075cc44818d8aeb *inst/CITATION
-ca2d3dae169ee984ab0e393baf35c2b8 *inst/doc/adehabitatMA.R
-5ff0e244c519a8a2d69cb3faecac7006 *inst/doc/adehabitatMA.Rnw
-5c49f57d71a39ccea3e5e0414c62efae *inst/doc/adehabitatMA.pdf
+418c33744e45e5f26f3a1d4fcfaa47e5 *inst/doc/adehabitatMA.R
+92b300af163fca2d38f105175c9b3748 *inst/doc/adehabitatMA.Rnw
+63e736351e7c69519eed434f07a277a0 *inst/doc/adehabitatMA.pdf
 20fd7d6f92eb8ada58db4335d077ac33 *man/adehabitatMA-internals.Rd
 d690cf0c3e8d98a4e02864b1b1bad32b *man/adeoptions.Rd
 1a0fdb5b5d0b65d41f30373dbc82842e *man/ascgen.Rd
-83715f1d497c08d2e30f231f3e8f6e62 *man/buffer.Rd
+3f34b66bbec73ded68ed98caec82e125 *man/buffer.Rd
 24d7825160c40fcf010c74008adc61e4 *man/count.points.Rd
 09596214bb83d48f1c2c72c2246e9803 *man/distfacmap.Rd
 178754df8554df8a51b40cf8b8dc5663 *man/explore.Rd
@@ -53,5 +53,5 @@ f6a183770bbb61d7f7e4017bc1bb538d *man/mimage.Rd
 5a66b0e770a4fc261908f3f1ef0c76c8 *man/subsetmap.Rd
 4e87325237599382c2ce2873c3e08ebd *src/init.c
 b1c0418fbc6b66fa2723396cf4ccfd5c *src/tests.c
-5ff0e244c519a8a2d69cb3faecac7006 *vignettes/adehabitatMA.Rnw
+92b300af163fca2d38f105175c9b3748 *vignettes/adehabitatMA.Rnw
 38a2cb8faeb994e00f883659014fa6cc *vignettes/screenshot1.png
