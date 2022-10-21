@@ -1,4 +1,4 @@
-d1d1aef15e6878f82109f5ba9e6982fb *DESCRIPTION
+fa73115ec77f668e26d8dac1f287fc8a *DESCRIPTION
 a01a67b7853f0cfde883c7afe7ac42f4 *NAMESPACE
 4a53bc6201bba4c2bb76b63d736e9394 *R/ademaps-internal.R
 a3cbb60351ea8da55577ac902387c759 *R/area2spol.r
@@ -27,7 +27,7 @@ c9c6e505b6dd0247cc37076b32c45e6f *R/morphology.r
 03efafc54d3b4db4d2d0e2ab080d4b38 *data/lynxjura.rda
 79eceaa18d3355dcac7f5a9c32500404 *data/puechabonsp.rda
 91e834fa34052bea7075cc44818d8aeb *inst/CITATION
-e79329f30c87b67c087c6a8df5f23214 *inst/doc/adehabitatMA.pdf
+377752ebf10f971173570d0543cb9e0d *inst/doc/adehabitatMA.pdf
 20fd7d6f92eb8ada58db4335d077ac33 *man/adehabitatMA-internals.Rd
 0fa128944ae7f0cc2434cc4861b85dc3 *man/adeoptions.Rd
 d24fe5d419e7c798174a102f3e59b43d *man/ascgen.Rd
@@ -49,6 +49,6 @@ e06e3a61a4329404ec278a5da25b9622 *man/morphology.Rd
 8fd52f6ba8f14778b8e084d1b46314f2 *man/show-methods.Rd
 2252fe8a09e0381cfc9004319440f8c1 *man/subsetmap.Rd
 4e87325237599382c2ce2873c3e08ebd *src/init.c
-b1c0418fbc6b66fa2723396cf4ccfd5c *src/tests.c
+fd0ea3f6313958689d3f94162e23554e *src/tests.c
 92b300af163fca2d38f105175c9b3748 *vignettes/adehabitatMA.Rnw
 38a2cb8faeb994e00f883659014fa6cc *vignettes/screenshot1.png
